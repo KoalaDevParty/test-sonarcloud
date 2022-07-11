@@ -21,7 +21,7 @@ type Message struct {
 // to write additional headers to the reply, beyond the Content-type and
 // Content-length values provided automatically by the api package.
 func helloWorldJSON(w http.ResponseWriter, r *http.Request) string {
-	m := Message{"Hello World"}
+	m := Message{"Hello World my little dog"}
 	b, err := json.Marshal(m)
 	if err != nil {
 		panic(err) // no, not really
